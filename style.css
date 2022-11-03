@@ -1,0 +1,284 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  color: black;
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  background: linear-gradient(to right, #8681b3, #4d45b8);
+  color: #fff;
+  height: 80px;
+  padding: 1rem 3rem;
+}
+
+.logo_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+.logo_sub {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #8681b3;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.home-hero {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  min-height: 60rem;
+  max-height: 80rem;
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 40%;
+    color: white;
+    background-color: #8681b3;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+.home-hero__content {
+  max-width: 90rem;
+  width: 90%;
+  padding-left: 10%;
+}
+
+.home-hero__socials {
+  top: 0;
+  padding: 0.5rem;
+  margin-left: 30%;
+  padding-top: 25%;
+  padding-bottom: 0;
+}
+
+.home-hero__social-icon {
+  width: 100%;
+}
+
+.home-hero__social {
+  width: 6vw;
+  display: inline-block;
+}
+
+.home-hero__social-icon-link {
+  width: 100%;
+  display: block;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.home-hero__social-icon-link:hover {
+  background: rgba(250, 207, 15, 0.2);
+}
+
+.heading-primary {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+}
+
+.text-primary {
+  color: #333;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.home-hero__cta {
+  margin-top: 5rem;
+  align-content: center;
+  text-align: center;
+}
+
+a.home-hero__cta {
+  /* other styles */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn--bg {
+  padding: 1.5rem 0rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background: #8681b3;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  width: 200px;
+}
+
+@media (min-width: 700px) {
+  .home-hero__socials {
+    transform: translateY(150%);
+    background: #fff;
+    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    padding: 0.5rem;
+    margin-left: 0;
+    width: 5vw;
+  }
+
+  .home-hero__social {
+    width: 3vw;
+    display: block;
+  }
+}
