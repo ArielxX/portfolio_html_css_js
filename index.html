@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,7 +14,7 @@
       <div class="logo">
         <div class="logo_img_cnt">
           <img
-            src="/profile.jpg"
+            src="/images/profile.jpg"
             alt="Ariel Cruz Logo Image"
             class="logo_img"
           />
@@ -28,10 +28,18 @@
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#">Home </a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Experience</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </section>
 
@@ -73,7 +81,7 @@
             target="_blank"
           >
             <img
-              src="gmail.svg"
+              src="images/gmail.svg"
               alt="Ariel Cruz gmail address"
               class="home-hero__social-icon"
             />
@@ -101,7 +109,7 @@
             target="_blank"
           >
             <img
-              src="gitlab.svg"
+              src="images/gitlab.svg"
               alt="Ariel Gitlab Profile"
               class="home-hero__social-icon"
             />
@@ -116,8 +124,8 @@
             target="_blank"
           >
             <img
-              src="telegram.svg"
-              alt="RammCodes DEV.to Blog Profile"
+              src="images/telegram.svg"
+              alt="ArielxX Telegram Profile"
               class="home-hero__social-icon"
             />
           </a>
@@ -136,13 +144,331 @@
           </p>
         </div>
         <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a href="./#projects" class="btn btn--bg">Experience</a>
         </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
+      <!-- <div class="home-hero__mouse-scroll-cont">
         <div class="mouse"></div>
+      </div> -->
+    </section>
+
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Here you will find more information about me, what I do, and my
+            current skills mostly in terms of programming and technology
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm a <strong>Backend Web Developer</strong> building the
+                Back-end of Websites and Web Applications that leads to the
+                success of the overall product. Check out some of my work
+                experience in the <strong>Experience</strong> section.
+              </p>
+              <p class="about__content-details-para">
+                I also like sharing content related to the stuff that I have
+                learned over the years in <strong>Machine Learning</strong> so
+                it can help other people of the AI Community. Feel free to
+                Connect or Follow me on my
+                <a
+                  rel="noreferrer"
+                  href="https://linkedin.com/in/ariel-cruz-3b1531121"
+                  target="_blank"
+                  >Linkedin</a
+                >
+                where I post useful content related to Machine Learning,
+                Algorithms and Programming
+              </p>
+              <p class="about__content-details-para">
+                I'm open to <strong>Job</strong> opportunities where I can
+                contribute, learn and grow. If you have a good opportunity that
+                matches my skills and experience then don't hesitate to
+                <strong>contact</strong> me.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Algorithms Design</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">Salesforce Development</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Math</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">Data Structures</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">LaTeX</div>
+              <div class="skills__skill">Backend Development</div>
+              <div class="skills__skill">Laravel</div>
+              <div class="skills__skill">SQL Basics</div>
+              <div class="skills__skill">AI</div>
+              <div class="skills__skill">Machine Learning</div>
+              <div class="skills__skill">Devops</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Experience</span>
+          <span class="heading-sec__sub">
+            Here you will find some of the personal and clients projects that I
+            have been working with.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/swagup.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <a href="https://swagup.com" class="projects__row-content-title">
+                <h3>
+                  Swagup
+                </h3>
+              </a>
+              <h5>Salesforce Developer</h5>
+              <p class="projects__row-content-desc">
+                SwagUp is an API-first platform to create, automate, and
+                distribute high quality branded swag, across all teams and use
+                cases. They are disrupting the swag industry by streamlining the
+                end to end supply chain into one platform and making it
+                available through powerful APIs and Interfaces. As the fastest
+                growing swag company ever, we are on a mission to eliminate all
+                of the friction out of the swag buying and distribution process.
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/loc.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <a
+                href="https://leaguesofcode.com"
+                class="projects__row-content-title"
+              >
+                <h3>
+                  Leagues of Code
+                </h3>
+              </a>
+              <h5>Backend Developer - Laravel - PHP</h5>
+              <p class="projects__row-content-desc">
+                Leagues of Code is like a supersonic catalyst for a successful
+                future. We launched the academy to equip the next generation
+                with the skills to thrive in the digital era.
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="images/hs.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <a
+                href="https://harbour.space"
+                class="projects__row-content-title"
+              >
+                <h3>
+                  Harbour Space
+                </h3>
+              </a>
+              <h5>Backend Developer - Laravel - PHP</h5>
+              <p class="projects__row-content-desc">
+                Harbour.Space is a space for learning design, technology and
+                entrepreneurship at the highest level, situated in globally
+                admired creative hub and harbour city: Barcelona. We offer
+                innovative university degrees taught in English by industry
+                leaders from around the world, aimed at giving our students
+                meaningful and creatively satisfying top-level professional
+                futures. We think the future is bright if you make it so.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form onSubmit="return sendMail()" class="contact__form">
+            <input type="hidden" name="form-name" value="form 1" />
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required=""
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required=""
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required=""
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/ariel-cruz-3b1531121/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+                  alt="Ariel Cruz Linkedin Profile"
+                />
+              </a>
+
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/arielxX94"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png"
+                  alt="ArielxX94 Twitter Profile"
+                />
+              </a>
+
+              <a
+                href="mailto:acruzx94@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="images/gmail2.svg"
+                  alt="Ariel Cruz gmail address"
+                  class="main-footer__icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/ArielxX"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+                  alt="ArielxX Github Profile"
+                />
+              </a>
+              <a
+                href="https://gitlab.com/acruzx94"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="images/gitlab2.svg"
+                  alt="Ariel Gitlab Profile"
+                  class="main-footer__icon main-footer__icon--mr-none"
+                />
+              </a>
+
+              <a href="https://t.me/arielxx" rel="noreferrer" target="_blank">
+                <img
+                  src="images/telegram2.svg"
+                  alt="ArielxX Telegram Profile"
+                  class="main-footer__icon main-footer__icon--mr-none"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Ariel Cruz</h2>
+            <p class="main-footer__short-desc">
+              Mathematician, Data Scientists and Backend Web Developer putting
+              his grain of sand in this world.
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          © Copyright 2022. Made by Ariel Cruz
+        </div>
+      </div>
+    </footer>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="script.js"></script>
 </html>
